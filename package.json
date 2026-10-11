@@ -1,0 +1,18 @@
+{
+  "name": "crm-leads",
+  "version": "1.0.0",
+  "description": "Приём заявок с сайта и передача в CRM (Битрикс24): дубли, повторные попытки, журнал",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "start": "tsx --env-file-if-exists=.env src/index.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
